@@ -1,0 +1,35 @@
+.unit-selection {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+  
+  .units-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .unit-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #00e6ff, #004aad);
+    color: white;
+  }
+  
+  .unit-button:hover {
+    background: linear-gradient(135deg, #004aad, #00e6ff);
+  }
+  
+  .back-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: #004aad;
+    color: white;
+  }
+  

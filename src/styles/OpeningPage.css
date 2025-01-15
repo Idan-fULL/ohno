@@ -1,0 +1,96 @@
+/* עיצוב כללי */
+.opening-page {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb, #90caf9); /* רקע בהיר יותר */
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  color: #0d47a1; /* צבע טקסט כהה יותר */
+}
+
+/* רקע אנימטיבי */
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 70%);
+  z-index: 1;
+  animation: pulse 10s infinite ease-in-out;
+  opacity: 0.7;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* תוכן */
+.content {
+  text-align: center;
+  z-index: 2;
+}
+
+.app-title {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1565c0; /* כחול כהה */
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  position: relative;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #00e6ff, 0 0 20px #00e6ff, 0 0 30px #00e6ff;
+  }
+  100% {
+    text-shadow: 0 0 20px #00e6ff, 0 0 30px #00e6ff, 0 0 40px #00e6ff;
+  }
+}
+
+.highlight {
+  color: #00e6ff;
+}
+
+/* תיאור */
+.app-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: #1e88e5; /* כחול בהיר יותר */
+  opacity: 0.9;
+}
+
+/* כפתור פעולה */
+.start-button {
+  padding: 20px 60px; /* ריווח גדול יותר */
+  font-size: 1.5rem; /* גודל פונט מוגדל */
+  font-weight: bold;
+  background: linear-gradient(135deg, #64b5f6, #42a5f5); /* מעבר צבע כחול בהיר */
+  border: none;
+  border-radius: 50px; /* מראה עגול */
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* צללה עדינה */
+  min-width: 250px; /* גודל מינימלי לכפתור */
+}
+
+.start-button:hover {
+  background: linear-gradient(135deg, #42a5f5, #64b5f6); /* מעבר צבע בהובר */
+  transform: scale(1.1); /* אפקט הגדלה */
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.6); /* צללה חזקה יותר */
+}

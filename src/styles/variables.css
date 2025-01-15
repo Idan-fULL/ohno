@@ -1,0 +1,15 @@
+:root {
+  /* צבעים */
+  --primary-color: #001f54;
+  --secondary-color: #00e6ff;
+  --background-color: #f4f9ff;
+  --text-color: #ffffff;
+  --button-hover: #004aad;
+
+  /* גופנים */
+  --font-family: 'Poppins', sans-serif;
+
+  /* גדלים */
+  --border-radius: 50px;
+  --padding: 15px 40px;
+}
